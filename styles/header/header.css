@@ -1,0 +1,156 @@
+@charset "UTF-8";
+.header {
+  font-family: "Inter", sans-serif; }
+  .header .header__nav {
+    display: flex;
+    align-items: center;
+    margin-top: 8px; }
+  .header .header__nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 11px 24px; }
+    .header .header__nav__logo::before {
+      content: url("../../assets/material-symbols_image.svg");
+      padding-top: 6px; }
+  .header .header__nav__catalog {
+    border: solid 1px #73aff4;
+    border-radius: 8px;
+    padding: 14px 24px;
+    margin-left: 7px;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; }
+  .header .header__nav__back {
+    display: none;
+    content: url("../../assets/arrow-left.svg"); }
+  .header .header__nav__search-wrapper {
+    position: relative;
+    max-width: 1041px;
+    width: 100%; }
+    .header .header__nav__search-wrapper .header__nav__search {
+      background-image: url(../../assets/search.svg);
+      background-repeat: no-repeat;
+      background-position-x: 17px;
+      background-position-y: 12px;
+      border: solid 1px #73aff4;
+      width: -webkit-fill-available;
+      max-width: 1018px;
+      border-radius: 10px;
+      color: #5a5a5a;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      /* 24px */
+      margin-left: 22px;
+      padding: 12px 0 12px 48px; }
+    .header .header__nav__search-wrapper .header__nav__search__btn {
+      display: none;
+      top: 5px;
+      right: 0;
+      color: var(--tech-white, #fff);
+      position: absolute;
+      /* Mobile/Main, 16 */
+      font-family: PT Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14px;
+      /* 87.5% */
+      padding: 12px 16px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 5px;
+      border: none;
+      background: var(--brand-primary, #7397f5); }
+  .header .header__nav__about-block {
+    display: flex;
+    margin-left: 22px;
+    gap: 20px;
+    padding: 0; }
+    .header .header__nav__about-block li a {
+      width: max-content;
+      list-style: none;
+      color: #393939;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal; }
+  .header .header__nav_burger {
+    display: none;
+    content: url("../../assets/burger-menu-svgrepo-com.svg");
+    width: 20px;
+    height: 20px; }
+
+@media screen and (max-width: 1563px) {
+  .header .header__nav {
+    margin-top: 14px; }
+  .header .header__nav__logo {
+    margin-left: 27px; }
+  .header .header__nav__about-block {
+    width: -webkit-fill-available;
+    margin-left: 72px; } }
+@media screen and (max-width: 1070px) {
+  .header .header__nav__about-block {
+    display: none; }
+  .header .header__nav_burger {
+    margin-left: 10px;
+    display: block; } }
+@media screen and (max-width: 692px) {
+  .header .header__nav__about-block {
+    display: none; }
+  .header .header__nav__logo {
+    display: none; }
+  .header .header__nav__catalog {
+    display: none; }
+  .header .header__nav:has(input:focus) .header__nav__back {
+    display: block; }
+  .header .header__nav:has(input:focus) .header__nav__search__btn {
+    display: flex; }
+  .header .header__nav:has(input:focus) .header__nav__search {
+    max-width: 325px; }
+  .header .header__nav:has(input:focus) .header__nav__search-wrapper::after {
+    content: url(../../assets/cross.svg);
+    position: absolute;
+    top: 15px;
+    right: 85px; }
+  .header .header__nav__search-wrapper .header__nav__search {
+    margin: unset; }
+  .header .header__nav__search-wrapper .header__nav__search:focus {
+    border-radius: 0;
+    padding-left: 0;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background-image: none;
+    border-bottom: solid 1px #d5d5d5; }
+  .header .header__nav__search-wrapper::before {
+    left: 5px;
+    position: absolute;
+    top: 54px;
+    content: "Название категории";
+    color: var(--font-primary, #333);
+    font-family: PT Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; }
+  .header .header__nav_burger {
+    display: none; } }
+
+/*# sourceMappingURL=header.css.map */

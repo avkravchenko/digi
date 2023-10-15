@@ -1,0 +1,35 @@
+@import "./header/header.scss";
+@import "./normalize.scss";
+@import "./filters/filters.scss";
+@import "./items/items.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  padding: 0 100px;
+
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  display: flex;
+  gap: 36px;
+}
+
+@media screen and (max-width: 871px) {
+  .container {
+    padding: 0 10px 10px;
+  }
+}

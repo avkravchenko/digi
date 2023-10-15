@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="header__nav">
+        <a href="#" class="header__nav__logo">Логотип</a>
+        <a href="#" class="header__nav__catalog">Каталог</a>
+        <div class="header__nav__back"></div>
+        <div class="header__nav__search-wrapper">
+          <input
+            class="header__nav__search"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Поиск по 100 000 товаров"
+          />
+          <button class="header__nav__search__btn">Найти</button>
+        </div>
+        <ul class="header__nav__about-block">
+          <li><a href="#">Информация о компании</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Полезные ссылки</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main container">
+      <div class="main__filters">
+        <div class="main__filters__categories">
+          <label class="main__filters__categories__label" for="header"
+            ><input
+              class="main__filters__categories__header"
+              name="header"
+              id="header"
+              type="checkbox"
+              checked
+            />Название категории
+          </label>
+          <div class="main__filters__categories__content">
+            <label for="sub-header1">
+              <input
+                class="main__filters__categories__sub-header"
+                type="radio"
+                name="sub-header"
+                id="sub-header1"
+              />Название категории</label
+            >
+            <label for="sub-header2">
+              <input
+                class="main__filters__categories__sub-header"
+                type="radio"
+                name="sub-header"
+                id="sub-header2"
+              />Название категории</label
+            >
+            <label for="sub-header3">
+              <input
+                class="main__filters__categories__sub-header"
+                type="radio"
+                name="sub-header"
+                id="sub-header3"
+                checked
+              />Название категории</label
+            >
+          </div>
+        </div>
+        <div class="main__filters__price">
+          <h4>Цена</h4>
+          <div class="main__filters__price__input" data-placeholder="от">
+            <input
+              class="weird-placeholder"
+              type="text"
+              name="weird-placeholder"
+              value="5 500 ₽"
+            />
+          </div>
+          <span style="color: #d5d5d5">—</span>
+          <div class="main__filters__price__input" data-placeholder="от">
+            <input
+              class="weird-placeholder"
+              type="text"
+              name="weird-placeholder"
+              value="5 500 ₽"
+            />
+          </div>
+        </div>
+        <div class="main__filters__brand">
+          <h4>Бренд</h4>
+          <span>Очистить</span>
+          <input type="text" placeholder="Поиск" />
+          <div class="main__filters__brand__options">
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" checked name="input1" id="input1" />
+              <label for="input1">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input2" id="input2" />
+              <label for="input2">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input3" id="input3" />
+              <label for="input3">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input4" id="input4" />
+              <label for="input4">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input5" id="input5" />
+              <label for="input5">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input6" id="input6" />
+              <label for="input6">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input7" id="input7" />
+              <label for="input7">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input8" id="input8" />
+              <label for="input8">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input9" id="input9" />
+              <label for="input9">Атрибут</label>
+            </div>
+          </div>
+        </div>
+        <div class="main__filters__size">
+          <h4>Размер</h4>
+          <div class="main__filters__brand__options">
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input10" id="input10" />
+              <label for="input10">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input11" id="input11" />
+              <label for="input11">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input12" id="input12" />
+              <label for="input12">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input13" id="input13" />
+              <label for="input13">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input14" id="input14" />
+              <label for="input14">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input15" id="input15" />
+              <label for="input15">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input16" id="input16" />
+              <label for="input16">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input17" id="input17" />
+              <label for="input17">Атрибут</label>
+            </div>
+            <div class="main__filters__brand__options__input-wrapper">
+              <input type="checkbox" name="input18" id="input18" />
+              <label for="input18">Атрибут</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__items">
+        <div class="main__items__card">
+          <div class="main__items__card__item-cover">
+            <span class="top-label"
+              >Хит продаж <span class="fire"></span>
+            </span>
+            <!--<img src="./assets/item-cover.png" alt="" />-->
+            <span class="bottom-label">25%</span>
+          </div>
+          <p class="main__items__card__name">Бренд</p>
+          <p class="main__items__card__full-name">
+            Полное название товара в несколько строк для вида с обрывом в
+            конце...
+          </p>
+          <p class="main__items__card__price">
+            5 990 ₽ <span class="main__items__card__prev-price">5 990 ₽</span>
+          </p>
+          <button class="main__items__card__btn">Купить</button>
+        </div>
+        <div class="main__items__card">
+          <div class="main__items__card__item-cover">
+            <span class="top-label"
+              >Хит продаж <span class="fire"></span>
+            </span>
+            <!--<img src="./assets/item-cover.png" alt="" />-->
+            <span class="bottom-label">25%</span>
+          </div>
+          <p class="main__items__card__name">Бренд</p>
+          <p class="main__items__card__full-name">
+            Полное название товара в несколько строк для вида с обрывом в
+            конце...
+          </p>
+          <p class="main__items__card__price">
+            5 990 ₽ <span class="main__items__card__prev-price">5 990 ₽</span>
+          </p>
+          <button class="main__items__card__btn">Купить</button>
+        </div>
+        <div class="main__items__card">
+          <div
+            class="main__items__card__item-cover main__items__card__item-cover--empty"
+          >
+            <span class="top-label"
+              >Хит продаж <span class="fire"></span>
+            </span>
+            <!--<img src="./assets/item-cover.png" alt="" />-->
+            <span class="bottom-label">25%</span>
+          </div>
+          <p class="main__items__card__name">Бренд</p>
+          <p class="main__items__card__full-name">
+            Полное название товара в несколько строк для вида с обрывом в
+            конце...
+          </p>
+
+          <button class="main__items__card__btn-empty">
+            Сообщить о поступлении
+          </button>
+        </div>
+        <div class="main__items__card">
+          <div class="main__items__card__item-cover">
+            <span class="top-label"
+              >Хит продаж <span class="fire"></span>
+            </span>
+            <!--<img src="./assets/item-cover.png" alt="" />-->
+            <span class="bottom-label">25%</span>
+          </div>
+          <p class="main__items__card__name">Бренд</p>
+          <p class="main__items__card__full-name">
+            Полное название товара в несколько строк для вида с обрывом в
+            конце...
+          </p>
+          <p class="main__items__card__price">
+            5 990 ₽ <span class="main__items__card__prev-price">5 990 ₽</span>
+          </p>
+          <button class="main__items__card__btn">Купить</button>
+        </div>
+        <div class="main__items__card">
+          <div class="main__items__card__item-cover">
+            <span class="top-label"
+              >Хит продаж <span class="fire"></span>
+            </span>
+            <!--<img src="./assets/item-cover.png" alt="" />-->
+            <span class="bottom-label">25%</span>
+          </div>
+          <p class="main__items__card__name">Бренд</p>
+          <p class="main__items__card__full-name">
+            Полное название товара в несколько строк для вида с обрывом в
+            конце...
+          </p>
+          <p class="main__items__card__price">
+            5 990 ₽ <span class="main__items__card__prev-price">5 990 ₽</span>
+          </p>
+          <button class="main__items__card__btn">Купить</button>
+        </div>
+        <div class="main__items__card">
+          <div class="main__items__card__item-cover">
+            <span class="top-label"
+              >Хит продаж <span class="fire"></span>
+            </span>
+            <!--<img src="./assets/item-cover.png" alt="" />-->
+            <span class="bottom-label">25%</span>
+          </div>
+          <p class="main__items__card__name">Бренд</p>
+          <p class="main__items__card__full-name">
+            Полное название товара в несколько строк для вида с обрывом в
+            конце...
+          </p>
+          <p class="main__items__card__price">
+            5 990 ₽ <span class="main__items__card__prev-price">5 990 ₽</span>
+          </p>
+          <button class="main__items__card__btn">Купить</button>
+        </div>
+        <div class="main__items__card">
+          <div class="main__items__card__item-cover">
+            <span class="top-label"
+              >Хит продаж <span class="fire"></span>
+            </span>
+            <!--<img src="./assets/item-cover.png" alt="" />-->
+            <span class="bottom-label">25%</span>
+          </div>
+          <p class="main__items__card__name">Бренд</p>
+          <p class="main__items__card__full-name">
+            Полное название товара в несколько строк для вида с обрывом в
+            конце...
+          </p>
+          <p class="main__items__card__price">
+            5 990 ₽ <span class="main__items__card__prev-price">5 990 ₽</span>
+          </p>
+          <button class="main__items__card__btn">Купить</button>
+        </div>
+        <div class="main__items__card">
+          <div class="main__items__card__item-cover">
+            <span class="top-label"
+              >Хит продаж <span class="fire"></span>
+            </span>
+            <!--<img src="./assets/item-cover.png" alt="" />-->
+            <span class="bottom-label">25%</span>
+          </div>
+          <p class="main__items__card__name">Бренд</p>
+          <p class="main__items__card__full-name">
+            Полное название товара в несколько строк для вида с обрывом в
+            конце...
+          </p>
+          <p class="main__items__card__price">
+            5 990 ₽ <span class="main__items__card__prev-price">5 990 ₽</span>
+          </p>
+          <button class="main__items__card__btn">Купить</button>
+        </div>
+        <div class="main__items__card">
+          <div class="main__items__card__item-cover">
+            <span class="top-label"
+              >Хит продаж <span class="fire"></span>
+            </span>
+            <!--<img src="./assets/item-cover.png" alt="" />-->
+            <span class="bottom-label">25%</span>
+          </div>
+          <p class="main__items__card__name">Бренд</p>
+          <p class="main__items__card__full-name">
+            Полное название товара в несколько строк для вида с обрывом в
+            конце...
+          </p>
+          <p class="main__items__card__price">
+            5 990 ₽ <span class="main__items__card__prev-price">5 990 ₽</span>
+          </p>
+          <button class="main__items__card__btn">Купить</button>
+        </div>
+        <div class="main__items__card">
+          <div class="main__items__card__item-cover">
+            <span class="top-label"
+              >Хит продаж <span class="fire"></span>
+            </span>
+            <!--<img src="./assets/item-cover.png" alt="" />-->
+            <span class="bottom-label">25%</span>
+          </div>
+          <p class="main__items__card__name">Бренд</p>
+          <p class="main__items__card__full-name">
+            Полное название товара в несколько строк для вида с обрывом в
+            конце...
+          </p>
+          <p class="main__items__card__price">
+            5 990 ₽ <span class="main__items__card__prev-price">5 990 ₽</span>
+          </p>
+          <button class="main__items__card__btn">Купить</button>
+        </div>
+        <div class="main__items__card">
+          <div class="main__items__card__item-cover">
+            <span class="top-label"
+              >Хит продаж <span class="fire"></span>
+            </span>
+            <!--<img src="./assets/item-cover.png" alt="" />-->
+            <span class="bottom-label">25%</span>
+          </div>
+          <p class="main__items__card__name">Бренд</p>
+          <p class="main__items__card__full-name">
+            Полное название товара в несколько строк для вида с обрывом в
+            конце...
+          </p>
+          <p class="main__items__card__price">
+            5 990 ₽ <span class="main__items__card__prev-price">5 990 ₽</span>
+          </p>
+          <button class="main__items__card__btn">Купить</button>
+        </div>
+        <div class="main__items__card">
+          <div class="main__items__card__item-cover">
+            <span class="top-label"
+              >Хит продаж <span class="fire"></span>
+            </span>
+            <!--<img src="./assets/item-cover.png" alt="" />-->
+            <span class="bottom-label">25%</span>
+          </div>
+          <p class="main__items__card__name">Бренд</p>
+          <p class="main__items__card__full-name">
+            Полное название товара в несколько строк для вида с обрывом в
+            конце...
+          </p>
+          <p class="main__items__card__price">
+            5 990 ₽ <span class="main__items__card__prev-price">5 990 ₽</span>
+          </p>
+          <button class="main__items__card__btn">Купить</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
