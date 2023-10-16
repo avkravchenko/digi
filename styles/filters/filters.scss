@@ -1,3 +1,10 @@
+.common-font {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px; /* 116.667% */
+}
+
 .main__filters {
   display: flex;
   flex: 1;
@@ -5,11 +12,9 @@
   max-width: 280px;
 
   .main__filters__categories {
+    @extend .common-font;
     display: flex;
     flex-direction: column;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 16px; /* 114.286% */
     margin-top: 39px;
 
@@ -19,16 +24,13 @@
       margin-left: 8px;
 
       &::after {
+        @extend .common-font;
+        content: "3";
         position: absolute;
         top: 1px;
         right: 16px;
-        content: "3";
         color: #333;
-        font-family: PT Sans;
         font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 14px; /* 116.667% */
       }
     }
 
@@ -37,7 +39,6 @@
       flex-direction: column;
       gap: 4px;
       margin-top: 9px;
-      //margin: 14px 0 0 24px;
 
       label {
         cursor: pointer;
@@ -49,16 +50,13 @@
           background-color: #e2efff;
         }
         &::after {
+          @extend .common-font;
+          content: "3";
           position: absolute;
           top: 6px;
           right: 16px;
-          content: "3";
           color: #333;
-          font-family: PT Sans;
           font-size: 12px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 14px; /* 116.667% */
         }
       }
 
@@ -88,9 +86,9 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 10px;
     text-align: center;
     column-gap: 14px;
+    margin-top: 10px;
 
     h4 {
       width: 100%;
@@ -101,14 +99,11 @@
       position: relative;
 
       .weird-label {
+        @extend .common-font;
         position: absolute;
-        color: var(--font-primary, #333);
+        color: #333;
         top: 11px;
         left: 26px;
-        font-family: PT Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 16px; /* 114.286% */
       }
     }
@@ -117,32 +112,26 @@
       position: relative;
 
       &::after {
+        @extend .common-font;
+        content: attr(data-placeholder);
         position: absolute;
         left: 9px;
         top: 12px;
-        content: attr(data-placeholder);
         pointer-events: none;
-        color: var(--font-secondary, #aaa);
-        font-family: PT Sans;
+        color: #aaa;
         font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 14px; /* 116.667% */
       }
     }
 
     input {
+      @extend .common-font;
       max-width: 119px;
-      padding: 9px 9px 9px 25px;
       border-radius: 4px;
       border: 1px solid #d5d5d5;
       background: #fff;
-      color: var(--font-primary, #333);
-      font-family: PT Sans;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
+      color: #333;
       line-height: 16px;
+      padding: 9px 9px 9px 25px;
     }
   }
 
@@ -155,42 +144,35 @@
     margin-top: 30px;
 
     h4 {
-      margin: 0;
       padding: 0;
+      margin: 0;
     }
 
     input {
-      color: var(--font-secondary, #aaa);
-      background-image: url("../../assets/search-categoty.svg");
-      background-repeat: no-repeat;
-      background-position: 11px 9px;
-      font-family: PT Sans;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 16px; /* 114.286% */
-      padding: 7px 0 10px 35px;
+      @extend .common-font;
+      color: #aaa;
+      background: url("../../assets/search-categoty.svg") no-repeat 11px 9px;
+      line-height: 16px;
       width: 100%;
       border-radius: 4px;
-      border: 1px solid var(--tech-borderand-others, #d5d5d5);
+      border: 1px solid #d5d5d5;
+      padding: 7px 0 10px 35px;
     }
 
     span {
-      color: var(--font-secondary, #aaa);
+      @extend .common-font;
+      color: #aaa;
       text-align: right;
-      font-family: PT Sans;
       font-size: 12px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 12px; /* 100% */
+      line-height: 12px;
       text-decoration-line: underline;
     }
   }
 
   .main__filters__size {
     h4 {
-      margin: 27px 0 16px 0;
       text-align: center;
+      margin: 27px 0 16px 0;
     }
 
     input {
@@ -216,17 +198,13 @@
     }
 
     label {
+      @extend .common-font;
       cursor: pointer;
       position: relative;
-      color: var(--font-primary, #333);
+      color: #333;
       width: 100%;
+      line-height: 16px;
       margin-left: 31px;
-      /* General/Main, 14 */
-      font-family: PT Sans;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 16px; /* 114.286% */
     }
 
     label::before {
@@ -241,17 +219,14 @@
     }
 
     label::after {
+      @extend .common-font;
+      content: "3";
       top: 2px;
       position: absolute;
       right: 16px;
-      content: "3";
-      color: var(--font-secondary, #aaa);
+      color: #aaa;
       text-align: right;
-      font-family: PT Sans;
       font-size: 12px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 14px;
     }
   }
 }

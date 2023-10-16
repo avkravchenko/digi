@@ -1,3 +1,11 @@
+.common-font {
+  font-family: Inter;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .header {
   font-family: "Inter", sans-serif;
 
@@ -8,16 +16,12 @@
   }
 
   .header__nav__logo {
+    @extend .common-font;
     display: flex;
     align-items: center;
     gap: 9px;
-    color: #000;
     text-align: center;
-    font-family: Inter;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     padding: 11px 24px;
 
     &::before {
@@ -27,16 +31,13 @@
   }
 
   .header__nav__catalog {
+    @extend .common-font;
     border: solid 1px #73aff4;
     border-radius: 8px;
     padding: 14px 24px;
     margin-left: 7px;
-    color: #000;
-    font-family: Inter;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
   }
 
   .header__nav__back {
@@ -50,35 +51,29 @@
     width: 100%;
 
     .header__nav__search {
-      background-image: url(../../assets/search.svg);
-      background-repeat: no-repeat;
-      background-position-x: 17px;
-      background-position-y: 12px;
+      @extend .common-font;
+      background: url(../../assets/search.svg) no-repeat 17px 12px;
+
       border: solid 1px #73aff4;
       width: -webkit-fill-available;
       max-width: 1018px;
       border-radius: 10px;
       color: #5a5a5a;
-      font-family: Inter;
       font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
       line-height: 150%; /* 24px */
       margin-left: 22px;
       padding: 12px 0 12px 48px;
     }
 
     .header__nav__search__btn {
+      @extend .common-font;
       display: none;
       top: 5px;
       right: 0;
       color: var(--tech-white, #fff);
       position: absolute;
-      /* Mobile/Main, 16 */
       font-family: PT Sans;
       font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
       line-height: 14px; /* 87.5% */
       padding: 12px 16px;
       flex-direction: column;
@@ -93,25 +88,21 @@
 
   .header__nav__about-block {
     display: flex;
-    //width: -webkit-fill-available;
     margin-left: 22px;
     gap: 20px;
     padding: 0;
 
     li a {
+      @extend .common-font;
       width: max-content;
       list-style: none;
       color: #393939;
-      font-family: Inter;
       font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
     }
   }
   .header__nav_burger {
-    display: none;
     content: url("../../assets/burger-menu-svgrepo-com.svg");
+    display: none;
     width: 20px;
     height: 20px;
   }

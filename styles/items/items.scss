@@ -1,3 +1,9 @@
+.common-font {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 .main__items {
   display: flex;
   justify-content: center;
@@ -19,23 +25,20 @@
       overflow: hidden;
 
       .top-label {
+        @extend .common-font;
         display: flex;
         align-items: center;
         position: absolute;
         background-color: #fff;
         border-radius: 4px;
-        border: 1px solid var(--tech-scroll-bar, #f2f2f2);
-        padding: 4px 11px;
+        border: 1px solid #f2f2f2;
         top: 13px;
         left: 12px;
-        color: var(--font-primary, #333);
+        color: #333;
         text-align: right;
-        font-family: PT Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 16px;
         z-index: 1;
+        padding: 4px 11px;
 
         .fire {
           height: 20px;
@@ -46,79 +49,59 @@
       }
 
       .bottom-label {
+        @extend .common-font;
         position: absolute;
         bottom: 13px;
         left: 12px;
         border-radius: 4px;
-        background: var(--brand-primary, #7397f5);
-        padding: 6px 10px;
-        color: var(--tech-white, #fff);
-        text-align: right;
-
-        /* General/Header AC, 14 */
-        font-family: PT Sans;
-        font-size: 14px;
-        font-style: normal;
+        background: #7397f5;
+        color: #fff;
         font-weight: 700;
         line-height: 14px; /* 100% */
         z-index: 1;
+        padding: 6px 10px;
       }
     }
     .main__items__card__name {
-      color: var(--font-secondary, #aaa);
-      margin-top: 16px;
-      /* General/Main, 14 */
-      font-family: PT Sans;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
+      @extend .common-font;
+      color: #aaa;
       line-height: 16px; /* 114.286% */
+      margin-top: 16px;
     }
 
     .main__items__card__full-name {
-      color: var(--font-primary, #333);
-      margin-top: -5px;
-      /* General/Main, 14 */
-      font-family: PT Sans;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
+      @extend .common-font;
+      color: #333;
       line-height: 16px; /* 114.286% */
+      margin-top: -5px;
     }
 
     .main__items__card__price {
-      color: var(--font-primary, #333);
-
-      /* Mobile/Header AC, 16 */
-      font-family: PT Sans;
+      @extend .common-font;
+      color: #333;
       font-size: 16px;
-      font-style: normal;
       font-weight: 700;
       line-height: 14px; /* 87.5% */
 
       .main__items__card__prev-price {
-        color: var(--font-secondary, #aaa);
-        font-family: PT Sans;
+        @extend .common-font;
+        color: #aaa;
         font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 14px; /* 116.667% */
         text-decoration-line: line-through;
       }
     }
 
     .main__items__card__btn {
-      margin-top: -3px;
-      color: var(--brand-primary, #7397f5);
-      font-family: PT Sans;
-      font-size: 14px;
-      font-style: normal;
+      @extend .common-font;
+      color: #7397f5;
       font-weight: 700;
-      padding: 10px 15px;
       border-radius: 4px;
       border: 1px solid var(--brand-primary, #7397f5);
-      background: var(--tech-white, #fff);
+      background: #fff;
       cursor: pointer;
+      padding: 10px 15px;
+      margin-top: -3px;
     }
 
     .main__items__card__item-cover-empty {
@@ -126,35 +109,28 @@
     }
 
     .main__items__card__btn-empty {
-      color: var(--font-secondary, #aaa);
-      width: 100%;
-      font-family: PT Sans;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 14px;
+      @extend .common-font;
       display: flex;
-      padding: 11px 16px;
       justify-content: center;
       align-items: center;
       gap: 4px;
       align-self: stretch;
+      color: #aaa;
+      width: 100%;
+      font-weight: 700;
+      line-height: 14px;
       border-radius: 4px;
-      border: 1px solid var(--font-secondary, #aaa);
-      background: var(--tech-white, #fff);
-      margin-top: 60px;
+      border: 1px solid #aaa;
+      background: #fff;
       cursor: pointer;
+      padding: 11px 16px;
+      margin-top: 60px;
     }
   }
 
   .main__items__card:hover .main__items__card__full-name {
-    color: var(--font-hover, #125bae);
-
-    /* General/Main, 14 */
-    font-family: PT Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
+    @extend .common-font;
+    color: #125bae;
     line-height: 16px; /* 114.286% */
   }
 

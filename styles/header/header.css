@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.common-font, .header .header__nav__logo, .header .header__nav__catalog, .header .header__nav__search-wrapper .header__nav__search, .header .header__nav__search-wrapper .header__nav__search__btn, .header .header__nav__about-block li a {
+  font-family: Inter;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; }
+
 .header {
   font-family: "Inter", sans-serif; }
   .header .header__nav {
@@ -9,13 +16,8 @@
     display: flex;
     align-items: center;
     gap: 9px;
-    color: #000;
     text-align: center;
-    font-family: Inter;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     padding: 11px 24px; }
     .header .header__nav__logo::before {
       content: url("../../assets/material-symbols_image.svg");
@@ -25,12 +27,8 @@
     border-radius: 8px;
     padding: 14px 24px;
     margin-left: 7px;
-    color: #000;
-    font-family: Inter;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal; }
+    font-weight: 500; }
   .header .header__nav__back {
     display: none;
     content: url("../../assets/arrow-left.svg"); }
@@ -39,19 +37,13 @@
     max-width: 1041px;
     width: 100%; }
     .header .header__nav__search-wrapper .header__nav__search {
-      background-image: url(../../assets/search.svg);
-      background-repeat: no-repeat;
-      background-position-x: 17px;
-      background-position-y: 12px;
+      background: url(../../assets/search.svg) no-repeat 17px 12px;
       border: solid 1px #73aff4;
       width: -webkit-fill-available;
       max-width: 1018px;
       border-radius: 10px;
       color: #5a5a5a;
-      font-family: Inter;
       font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
       line-height: 150%;
       /* 24px */
       margin-left: 22px;
@@ -62,11 +54,8 @@
       right: 0;
       color: var(--tech-white, #fff);
       position: absolute;
-      /* Mobile/Main, 16 */
       font-family: PT Sans;
       font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
       line-height: 14px;
       /* 87.5% */
       padding: 12px 16px;
@@ -86,14 +75,10 @@
       width: max-content;
       list-style: none;
       color: #393939;
-      font-family: Inter;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal; }
+      font-size: 14px; }
   .header .header__nav_burger {
-    display: none;
     content: url("../../assets/burger-menu-svgrepo-com.svg");
+    display: none;
     width: 20px;
     height: 20px; }
 
